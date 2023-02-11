@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Unidade III</title>
+        <meta name="description" content="Formulários">
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+
+        <form name="Form1" method="post" action="">
+            Nome: <input type="text" name="nome"/>
+            Senha: <input type="password" name="senha"/>
+            E-mail: <input type="email" name="usermail"/>
+            URL: <input type="url" name="hoempage"/>
+            <input type="submit" name="Enviar"/>
+        </form>
+
+        <form name="form1" method="post" action="">
+            <input name="oculto" type="hidden" value="algumacoisa">
+
+            Escolha um carro: </br>
+            <input type="checkbox" name="carros" value="Camaro"/>Camaro</br>
+            <input type="checkbox" name="carros" value="Ferrari">Ferrari</br></br>
+
+            <input name="botao" type="button" value="Clique aqui" onclick="alert('oi')"/>
+
+            </br></br>
+            Escolha um arquivo <input name="arquivo" type="file"/>
+
+            </br></br>
+
+            Colocando uma imagem como botão</br>
+            <input name="imagem" type="image" src="cruzeiro.jpg"/>
+
+            </br>
+
+            Ecolha um sexo:</br>
+            <input type="radio" name="sexo" value="F"/>Feminino</br>
+            <input type="radio" name="sexo" value="M"/>Masculino
+<!--Sempre que desejamos que o usuário selecione mais de uma opção ao mesmo tempo,
+devemos utilizar o checkbox, agora se precisamos disponibilizar uma opção e permitir que
+somente e unicamente 1 opção seja selecionada, então utilizamos a opção rádio.
+Outra nota que devemos nos atentar é que o campo com o type=”hidden” o campo não será
+visível no browser, mas ele existe no formulário.-->
+        </form>
+
+        Escolha uma fruta: </br>
+        <input list="frutas" name="fruta"/>
+        
+        <datalist id="frutas">
+            
+            <option value="Maçã">
+            <option value="banana">
+            <option value="Morango">
+            <option value="Abacaxi">
+            <option value="Melancia">
+            <option value="Pera">
+            <option value="Uva">    
+        <!--Sempre que desejamos que o usuário selecione mais de uma opção ao mesmo tempo,
+        devemos utilizar o checkbox, agora se precisamos disponibilizar uma opção e permitir que
+        somente e unicamente 1 opção seja selecionada, então utilizamos a opção rádio.
+        Outra nota que devemos nos atentar é que o campo com o type=”hidden” o campo não será
+        visível no browser, mas ele existe no formulário.
+        Explor
+        Tag Datalist
+        Define uma lista de opções para um elemento input, seria somente sugestões, o
+        usuário poderá digitar valores diferentes.-->
+        </datalist>
+
+        <form>
+            <select>
+
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="JSP">JSP</option>
+                <option value="HTML">HTML</option>
+            <!--Cria uma lista de opções (conhecido como combobox)-->
+
+            </select>
+        </form>
+
+        <form>
+
+            Usuário: <input type="text" name="user" placeholder="Digite seu Usuário" autofocus="autofocus"/></br>
+            Senha: <input type="text" name="senha" placeholder="Digite sua senha"/></br>
+            Comentários:</br>
+            <textarea rows="8" cols="70" required="required"></textarea></br>
+            <input type="submit" value="Submit"/>
+
+        </form>
+
+    </body>
+
+</html>
