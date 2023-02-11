@@ -1,0 +1,21 @@
+* {
+    font-size: 22pt;
+}
+
+p * {
+    color: red;
+}
+
+/* 
+Sintaxe:
+* { propriedade: valor}
+Explicação:
+propriedade: Atributos que queremos modificar
+valor: Valor da propriedade
+Inserindo o * (asterisco) a frente do elemento, significa que todos os elementos
+na página irão receber essa configuração
+Para configurar o estilo para todos os elementos dentro de outro.
+Sintaxe:
+elemento * { propriedade: valor}
+
+*/
